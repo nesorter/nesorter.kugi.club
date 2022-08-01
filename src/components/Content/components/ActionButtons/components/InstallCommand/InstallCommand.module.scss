@@ -1,0 +1,27 @@
+.command {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 6px;
+  margin-bottom: 24px;
+
+  white-space: nowrap;
+}
+
+.container {
+  display: flex;
+  padding: 0 8px;
+}
+
+.link {
+  display: flex;
+  margin-right: 10px;
+}
+
+.copy {
+  background-image: url(../../../../../../images/installcommand/copybtn.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+}

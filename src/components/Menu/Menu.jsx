@@ -1,25 +1,25 @@
 import React from "react";
 
-import s from "./../styles/Header.module.scss";
+import s from "./Menu.module.scss";
 
-import logo from "./../images/logo.svg";
+import logo from "../../images/logo.svg";
 
-const Header = () => {
+const Menu = () => {
   return (
-    <header className={s.header}>
+    <header className={s.menu}>
       <>
         <img src={logo} alt="" />
       </>
-      <div className={s.menu}>
-        <nav>
+      <div className={s.links}>
+        <nav className={s.link}>
           <i className={`${s.icon} ${s.book}`}></i>
           Дока
         </nav>
-        <nav>
+        <nav className={s.link}>
           <i className={`${s.icon} ${s.cloud}`}></i>
           Облачное решение
         </nav>
-        <nav>
+        <nav className={s.link}>
           <i className={`${s.icon} ${s.github}`}></i>
           Github
         </nav>
@@ -29,4 +29,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Menu;

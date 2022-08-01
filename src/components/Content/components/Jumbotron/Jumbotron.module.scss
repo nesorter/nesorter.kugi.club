@@ -1,0 +1,26 @@
+.jumbotron {
+  max-width: 530px;
+
+  .header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 55px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #acacac;
+    margin-bottom: 25px;
+  }
+
+  .company {
+    color: #fff;
+  }
+}

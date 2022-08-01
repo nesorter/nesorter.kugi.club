@@ -1,13 +1,15 @@
-import Header from "./components/Header";
+import Content from "./components/Content/Content";
 
-import s from "./styles/App.module.scss";
+import s from "./App.module.scss";
 
 import "@fontsource/iosevka";
+import Menu from "./components/Menu/Menu";
 
 function App() {
   return (
     <div className={s.App}>
-      <Header />
+      <Menu />
+      <Content />
     </div>
   );
 }

@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Iosevka";
+
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+
+  button {
+    font-family: inherit;
+  }
+}
+
+.App {
+  background-image: url("./images/backsvg.svg");
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 62, 155, 0) -20.16%,
+    rgba(1, 47, 114, 0.94) 23.99%,
+    #012d6e 32.14%
+  );
+
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-color: #002970;
+}

@@ -1,0 +1,85 @@
+.sort {
+  position: relative;
+  background-color: #fff;
+  border-right: 1px solid #012e72;
+  border-radius: 6px 0 0 6px;
+
+  .label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+.popup {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -12px;
+  background: #fff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+  overflow: hidden;
+
+  ul {
+    overflow: hidden;
+    width: 240px;
+    // list-style-image: url(../../../../../../images/installcommand/brands/docker.svg);
+
+    li {
+      display: flex;
+      align-items: center;
+      color: #002966;
+      padding: 6px 9px;
+      cursor: pointer;
+
+      .text {
+        margin-left: 4px;
+      }
+
+      &.active,
+      &:hover {
+        background: rgba(49, 30, 254, 0.05);
+      }
+
+      &.active {
+        font-weight: bold;
+        color: red;
+      }
+    }
+  }
+}
+
+.icon {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 17px;
+  height: 17px;
+  margin-right: 4px;
+}
+
+.arrow {
+  display: flex;
+  background-image: url(../../../../../../../images/installcommand/arrow.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 7px;
+  height: 4px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.java {
+  background-image: url(../../../../../../../images/installcommand/brands/javascript.svg);
+}
+
+.docker {
+  background-image: url(../../../../../../../images/installcommand/brands/docker.svg);
+}
+
+.clone {
+  background-image: url(../../../../../../../images/installcommand/brands/github.svg);
+}
