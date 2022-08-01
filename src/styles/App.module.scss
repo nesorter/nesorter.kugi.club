@@ -4,11 +4,10 @@
   margin: 0;
 }
 
-// .App {
-//   // background-color: linear-gradient(
-//   //   180deg,
-//   //   rgba(0, 62, 155, 0) -20.16%,
-//   //   rgba(1, 47, 114, 0.94) 23.99%,
-//   //   #012d6e 32.14%
-//   // );
-// }
+body {
+  font-family: "Iosevka";
+
+  button {
+    font-family: inherit;
+  }
+}
