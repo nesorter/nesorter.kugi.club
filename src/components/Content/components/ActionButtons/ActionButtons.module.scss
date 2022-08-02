@@ -1,1 +1,30 @@
+.container {
+  margin-bottom: 42px;
+}
 
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.start {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #002966;
+  padding: 6px 20px;
+  border-radius: 8px;
+}
+
+.demo {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 6px 35px;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #002966;
+}

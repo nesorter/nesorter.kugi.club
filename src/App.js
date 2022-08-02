@@ -4,12 +4,14 @@ import s from "./App.module.scss";
 
 import "@fontsource/iosevka";
 import Menu from "./components/Menu/Menu";
+import Carousel from "./components/Carousel/Carousel";
 
 function App() {
   return (
     <div className={s.App}>
       <Menu />
       <Content />
+      <Carousel />
     </div>
   );
 }

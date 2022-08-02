@@ -9,6 +9,7 @@
 }
 
 .container {
+  position: relative;
   display: flex;
   padding: 0 8px;
 }
@@ -24,4 +25,19 @@
   background-repeat: no-repeat;
   width: 21px;
   height: 21px;
+}
+
+.java {
+  background-image: url(../../../../../../images/installcommand/brands/javascript.svg);
+}
+
+.popover {
+  position: absolute;
+  right: -35px;
+  top: 35px;
+  background-image: url(../../../../../../images/installcommand/popover.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 103px;
+  height: 37px;
 }

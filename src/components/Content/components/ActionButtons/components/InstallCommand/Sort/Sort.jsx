@@ -2,17 +2,29 @@ import React, { useState } from "react";
 
 import s from "./Sort.module.scss";
 
-const Sort = () => {
-  const [sort, setSort] = useState({
-    image: s.java,
-  });
+const Sort = ({ sort, setSort }) => {
+  //   const [sort, setSort] = useState({
+  //     image: s.java,
+  //   });
 
   const [open, setOpen] = useState(false);
 
   const list = [
-    { name: "NPM/Node.JS package", image: s.java },
-    { name: "Docker image", image: s.docker },
-    { name: "Clone Github repo", image: s.clone },
+    {
+      name: "NPM/Node.JS package",
+      image: s.java,
+      text: "npx create-nesorter-app@latest my-station",
+    },
+    {
+      name: "Docker image",
+      image: s.docker,
+      text: "https://docs.docker.com/network/links/",
+    },
+    {
+      name: "Clone Github repo",
+      image: s.clone,
+      text: "https://github.com/torvalds/linux",
+    },
   ];
 
   const updateList = (index) => {
