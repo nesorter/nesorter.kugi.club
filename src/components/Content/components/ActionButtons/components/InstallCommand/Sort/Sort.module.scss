@@ -14,11 +14,12 @@
 .popup {
   position: absolute;
   margin-top: 15px;
-  margin-left: -12px;
+  margin-left: 0px;
   background: #fff;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
   border-radius: 6px;
   overflow: hidden;
+  z-index: 999;
 
   ul {
     overflow: hidden;
