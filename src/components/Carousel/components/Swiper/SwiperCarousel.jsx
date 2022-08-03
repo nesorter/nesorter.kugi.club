@@ -22,15 +22,12 @@ const SwiperCarousel = () => {
   return (
     <Swiper
       spaceBetween={30}
-      pagination={{
-        dynamicBullets: true,
-      }}
       autoplay={{
         delay: 2500,
         disableOnInteraction: false,
       }}
       slidesPerView={3}
-      modules={[Pagination, Autoplay]}
+      modules={[Autoplay]}
       className="mySwiper"
     >
       <SwiperSlide>

@@ -28,3 +28,13 @@
   color: #ffffff;
   background-color: #002966;
 }
+
+@media screen and (max-width: 480px) {
+  .buttons {
+    justify-content: space-between;
+  }
+
+  .demo {
+    padding: 6px 15px;
+  }
+}
