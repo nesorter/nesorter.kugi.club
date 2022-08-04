@@ -8,9 +8,9 @@ import VignetteEffect from "./components/VignetteEffect/VignetteEffect";
 const Carousel = () => {
   return (
     <div className={s.carousel}>
-      <div className={s.effect}>
-        <VignetteEffect />
-      </div>
+      <div className={s.effectLeft}>{/* <VignetteEffect /> */}</div>
+      <div className={s.effectRight}>{/* <VignetteEffect /> */}</div>
+
       <div className={s.swipercarousel}>
         <SwiperCarousel />
       </div>

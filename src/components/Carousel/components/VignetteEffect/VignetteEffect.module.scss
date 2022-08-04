@@ -3,10 +3,14 @@
   z-index: 50;
   display: flex;
   // justify-content: space-between;
+
+  // background: linear-gradient(270deg, rgba(0, 62, 155, 0) 0%, #012c6e 31.73%);
 }
 
 .vignetteLeft {
   background: linear-gradient(270deg, rgba(0, 62, 155, 0) 0%, #012c6e 80%);
+  // background: linear-gradient(270deg, rgba(0, 62, 155, 0) 0%, #012c6e 31.73%);
+  // background: linear-gradient(270deg, rgba(0, 62, 155, 0) 0%, #012c6e 31.73%);
   width: 50vw;
   height: 50vh;
 }

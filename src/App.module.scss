@@ -20,6 +20,10 @@ body {
 }
 
 .App {
+  overflow-x: hidden;
+
+  min-height: 100vh;
+
   background: linear-gradient(
     180deg,
     rgba(0, 62, 155, 0) -20.16%,

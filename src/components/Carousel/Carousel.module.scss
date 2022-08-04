@@ -3,13 +3,46 @@
   padding-bottom: 50px;
 }
 
-.effect {
+.effectLeft {
   position: absolute;
-  width: 100%;
-  // background-size: cover;
+  top: 0;
+  bottom: 0;
+  // left: 0;
+  right: 0;
+  width: 30%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 62, 155, 0) -1.04%,
+    #012d6e 30.32%
+  );
+
+  z-index: 2;
+}
+
+.effectRight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  // right: 0;
+  width: 30%;
+  background: linear-gradient(270deg, rgba(0, 62, 155, 0) 0%, #012c6e 31.73%);
   z-index: 2;
 }
 
 .swipercarousel {
   z-index: 1;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    margin: 0 -220px;
+  }
+
+  .effectRight,
+  .effectLeft {
+    width: 40%;
+  }
 }
