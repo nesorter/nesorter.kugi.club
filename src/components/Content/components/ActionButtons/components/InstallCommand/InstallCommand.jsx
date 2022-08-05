@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+
+import { useClipboard } from "use-clipboard-copy";
+import { useDetectOutsideClick } from "../../../../../../hooks/useDetectOutsideClick/useDetectOutsideClick";
 
 import Sort from "./Sort/Sort";
 
 import s from "./InstallCommand.module.scss";
-import { useClipboard } from "use-clipboard-copy";
 
 const InstallCommand = () => {
   const [sort, setSort] = useState({
@@ -11,7 +13,9 @@ const InstallCommand = () => {
     text: "npx create-nesorter-app@latest my-station",
   });
 
-  const [click, setClick] = useState();
+  const dropdownRef = useRef(null);
+
+  const [click, setClick] = useDetectOutsideClick(dropdownRef, false);
 
   const HandleClick = () => {
     setClick(clipboard.copy(url));
@@ -26,7 +30,7 @@ const InstallCommand = () => {
       <Sort sort={sort} setSort={setSort} />
       <div className={s.container}>
         <div className={s.link}>{url}</div>
-        <i className={s.copy} onClick={HandleClick}></i>
+        <i ref={dropdownRef} className={s.copy} onClick={HandleClick}></i>
         {click && <i className={s.popover}></i>}
       </div>
     </div>

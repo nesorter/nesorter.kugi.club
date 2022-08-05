@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import { useDetectOutsideClick } from "../../../../../../../hooks/useDetectOutsideClick/useDetectOutsideClick";
 
 import s from "./Sort.module.scss";
 
 const Sort = ({ sort, setSort }) => {
-  //   const [sort, setSort] = useState({
-  //     image: s.java,
-  //   });
-
-  const [open, setOpen] = useState(false);
+  const dropdownRef = useRef(null);
+  const [open, setOpen] = useDetectOutsideClick(dropdownRef, false);
 
   const list = [
     {
@@ -34,7 +32,7 @@ const Sort = ({ sort, setSort }) => {
 
   return (
     <div className={s.sort}>
-      <div className={s.label} onClick={() => setOpen(!open)}>
+      <div ref={dropdownRef} className={s.label} onClick={() => setOpen(!open)}>
         <i className={`${s.icon} ${sort.image}`}></i>
 
         {!open ? (
