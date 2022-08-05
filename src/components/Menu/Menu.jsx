@@ -25,9 +25,6 @@ const Menu = () => {
           Github
         </nav>
         <button className={s.start}>начать</button>
-        {/* <button className={s.burger}>
-          <i className={s.image}></i>
-        </button> */}
       </div>
       <div className={s.BurgerMenuComponent}>
         <BurgerMenu />

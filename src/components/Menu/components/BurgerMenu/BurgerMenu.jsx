@@ -4,8 +4,6 @@ import { useDetectOutsideClick } from "../../../../hooks/useDetectOutsideClick/u
 import s from "./BurgerMenu.module.scss";
 
 const BurgerMenu = () => {
-  // const [navbarOpen, setNavbarOpen] = useState(false);
-
   const dropdownRef = useRef(null);
   const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
 

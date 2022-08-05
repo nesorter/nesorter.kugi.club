@@ -9,7 +9,6 @@ const Carousel = () => {
     <div className={s.carousel}>
       <div className={s.effectLeft}></div>
       <div className={s.effectRight}></div>
-
       <div className={s.swipercarousel}>
         <SwiperCarousel />
       </div>
