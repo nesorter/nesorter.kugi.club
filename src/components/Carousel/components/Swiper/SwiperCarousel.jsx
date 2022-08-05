@@ -1,21 +1,18 @@
 import React from "react";
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/scss";
 import "swiper/scss/autoplay";
 
-// import required modules
 import { Autoplay } from "swiper";
 
 import s from "./SwiperCarousel.module.scss";
 
 const images = [
-  { image: require("../../../../images/carousel/Frame2.png") },
-  { image: require("../../../../images/carousel/Frame4.png") },
-  { image: require("../../../../images/carousel/Frame7.png") },
+  { image: require("../../../../images/carousel/Frame2.jpg") },
+  { image: require("../../../../images/carousel/Frame4.jpg") },
+  { image: require("../../../../images/carousel/Frame7.jpg") },
 ];
 
 const SwiperCarousel = () => {
