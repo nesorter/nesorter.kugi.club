@@ -1,10 +1,11 @@
 import Content from "./components/Content/Content";
 
+import Menu from "./components/Menu/Menu";
+import Carousel from "./components/Carousel/Carousel";
+
 import s from "./App.module.scss";
 
 import "@fontsource/iosevka";
-import Menu from "./components/Menu/Menu";
-import Carousel from "./components/Carousel/Carousel";
 
 function App() {
   return (

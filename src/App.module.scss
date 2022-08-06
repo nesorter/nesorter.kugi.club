@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Iosevka";
+  font-family: "Iosevka", Helvetica, Arial, sans-serif;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -21,6 +21,8 @@ body {
 .App {
   overflow-x: hidden;
   min-height: 100vh;
+
+  font-family: "Iosevka", Helvetica, Arial, sans-serif;
 
   background: linear-gradient(
     180deg,
