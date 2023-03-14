@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Iosevka", Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+
+  button {
+    font-family: inherit;
+    border: none;
+    outline: none;
+  }
+}
+
+.App {
+  overflow-x: hidden;
+  min-height: 100vh;
+
+  font-family: "Iosevka", Helvetica, Arial, sans-serif;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 62, 155, 0) -20.16%,
+    rgba(1, 47, 114, 0.94) 23.99%,
+    #012d6e 32.14%
+  );
+
+  background-color: #002970;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-image: url("./images/background.png");
+  background-image: -webkit-image-set(
+    url(./images/webp/background/background.webp) 1x
+  );
+
+  @media screen and (max-width: 1080px) {
+    background-image: url(./images/background_table.png);
+
+    background-image: -webkit-image-set(
+      url(./images/webp/background/background_table.webp) 1x
+    );
+  }
+
+  @media screen and (max-width: 480px) {
+    background-image: url(./images/background_mobile.png);
+
+    background-image: -webkit-image-set(
+      url(./images/webp/background/background_mobile.webp) 1x
+    );
+  }
+}
