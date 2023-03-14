@@ -9,8 +9,10 @@ const ActionButtons = () => {
     <div className={s.container}>
       <InstallCommand />
       <div className={s.buttons}>
-        <button className={`${s.demo}`}>попробовать демо</button>
-        <button className={s.start}>начать</button>
+        <button className={`${s.demo}`} onClick={() => {
+          // eslint-disable-next-line no-restricted-globals
+          location.href = 'https://neformat.kugi.club';
+        }}>try demo</button>
       </div>
     </div>
   );

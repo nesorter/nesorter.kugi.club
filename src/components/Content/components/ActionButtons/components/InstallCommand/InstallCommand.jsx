@@ -9,8 +9,8 @@ import s from "./InstallCommand.module.scss";
 
 const InstallCommand = () => {
   const [sort, setSort] = useState({
-    image: s.java,
-    text: "npx create-nesorter-app@latest my-station",
+    image: s.clone,
+    text: "git clone https://github.com/nesorter/nesorter-docker.git",
   });
 
   const dropdownRef = useRef(null);

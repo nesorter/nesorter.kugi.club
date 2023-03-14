@@ -13,18 +13,9 @@ const Menu = () => {
       </>
       <div className={s.links}>
         <nav className={s.link}>
-          <i className={`${s.icon} ${s.book}`}></i>
-          Дока
-        </nav>
-        <nav className={s.link}>
-          <i className={`${s.icon} ${s.cloud}`}></i>
-          Облачное решение
-        </nav>
-        <nav className={s.link}>
           <i className={`${s.icon} ${s.github}`}></i>
-          Github
+          <a className={s.linkA} href="https://github.com/nesorter">Github</a>
         </nav>
-        <button className={s.start}>начать</button>
       </div>
       <div className={s.BurgerMenuComponent}>
         <BurgerMenu />

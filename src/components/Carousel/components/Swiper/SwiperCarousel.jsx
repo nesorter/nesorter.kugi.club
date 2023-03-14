@@ -5,20 +5,18 @@ import "swiper/scss";
 import "swiper/scss/autoplay";
 import { Autoplay } from "swiper";
 
-import Image from "react-image-webp";
-
 import s from "./SwiperCarousel.module.scss";
 
 const images = [
-  { image: require("../../../../images/carousel/Frame2.jpg") },
-  { image: require("../../../../images/carousel/Frame4.jpg") },
-  { image: require("../../../../images/carousel/Frame7.jpg") },
-];
-
-const imagesWebp = [
-  { image: require("../../../../images/webp/carousel/Frame2.webp") },
-  { image: require("../../../../images/webp/carousel/Frame4.webp") },
-  { image: require("../../../../images/webp/carousel/Frame7.webp") },
+  { image: require("../../../../images/carousel/9.png") },
+  { image: require("../../../../images/carousel/1.png") },
+  { image: require("../../../../images/carousel/2.png") },
+  { image: require("../../../../images/carousel/3.png") },
+  { image: require("../../../../images/carousel/4.png") },
+  { image: require("../../../../images/carousel/5.png") },
+  { image: require("../../../../images/carousel/6.png") },
+  { image: require("../../../../images/carousel/7.png") },
+  { image: require("../../../../images/carousel/8.png") },
 ];
 
 const SwiperCarousel = () => {
@@ -29,7 +27,7 @@ const SwiperCarousel = () => {
         delay: 2500,
         disableOnInteraction: false,
       }}
-      slidesPerView={3}
+      slidesPerView={1}
       modules={[Autoplay]}
       className="mySwiper"
       autoHeight={true}
@@ -48,52 +46,15 @@ const SwiperCarousel = () => {
         },
       }}
     >
-      <SwiperSlide>
-        <Image
-          className={s.image}
-          src={images[0].image}
-          webp={imagesWebp[0].image}
-        />
-        {/* // <img className={s.image} src={images[0].image} /> */}
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <Image
-          className={s.image}
-          src={images[1].image}
-          webp={imagesWebp[1].image}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          className={s.image}
-          src={images[2].image}
-          webp={imagesWebp[2].image}
-        />
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <Image
-          className={s.image}
-          src={images[0].image}
-          webp={imagesWebp[0].image}
-        />
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <Image
-          className={s.image}
-          src={images[1].image}
-          webp={imagesWebp[1].image}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          className={s.image}
-          src={images[2].image}
-          webp={imagesWebp[2].image}
-        />
-      </SwiperSlide>
+      {images.map(image => (
+        <SwiperSlide key={image.image}>
+          <img
+            className={s.image}
+            src={image.image}
+            alt={image.image}
+          />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

@@ -5,10 +5,10 @@ import s from "./Jumbotron.module.scss";
 const Jumbotron = () => {
   return (
     <div className={s.jumbotron}>
-      <h1 className={s.header}>Сортируй и стримь музыку в удобном виде</h1>
+      <h1 className={s.header}>Sort and stream your music in a convient way</h1>
       <div className={s.description}>
-        <span className={s.company}>nesorter</span> - это софтверное решение для
-        сортировки и стриминга музыки в icecast. OpenSource, developer-first.
+        <span className={s.company}>nesorter</span> - is a software solution for
+        sorting and streaming music in icecast. Open source, developer first.
       </div>
     </div>
   );

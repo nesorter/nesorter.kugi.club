@@ -9,19 +9,9 @@ const Sort = ({ sort, setSort }) => {
 
   const list = [
     {
-      name: "NPM/Node.JS package",
-      image: s.java,
-      text: "npx create-nesorter-app@latest my-station",
-    },
-    {
-      name: "Docker image",
-      image: s.docker,
-      text: "https://docs.docker.com/network/links/",
-    },
-    {
       name: "Clone Github repo",
       image: s.clone,
-      text: "https://github.com/torvalds/linux",
+      text: "git clone https://github.com/nesorter/nesorter-docker.git",
     },
   ];
 
